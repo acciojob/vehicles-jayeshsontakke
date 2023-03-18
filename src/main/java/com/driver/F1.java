@@ -21,7 +21,7 @@ public class F1 extends Car {
          * speed more than 250: gear 6
          */
         Vehicle v1=new Vehicle();
-       newSpeed= v1.getCurrentSpeed()+rate;
+       newSpeed= v1.currentSpeed+rate;
         F1 obj=new F1();
         if(newSpeed == 0) {
             //Stop the car, set gear as 1
@@ -45,8 +45,8 @@ public class F1 extends Car {
         }
         //for all other cases, change the gear accordingly
 
-        if(newSpeed > 0) {
-            changeSpeed(newSpeed, getCurrentDirection());
-        }
+//        if(newSpeed > 0) {
+//            changeSpeed(newSpeed, getCurrentDirection());
+//        }
     }
 }
