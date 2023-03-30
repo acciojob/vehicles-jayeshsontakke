@@ -10,6 +10,7 @@ public class F1 extends Car {
     }
 
     public void accelerate(int rate){
+
         int newSpeed = 0; //set the value of new speed by using currentSpeed and rate
         /**
          * speed 0: gear 1
@@ -21,7 +22,8 @@ public class F1 extends Car {
          * speed more than 250: gear 6
          */
         Vehicle v1=new Vehicle();
-       newSpeed= v1.currentSpeed+rate;
+       newSpeed= currentSpeed+rate;
+
         F1 obj=new F1();
         if(newSpeed == 0) {
             //Stop the car, set gear as 1
